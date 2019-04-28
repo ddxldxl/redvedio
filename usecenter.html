@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/usecenter.css">
+    <link rel="stylesheet" href="plugin/swiper/swiper-3.4.2.min.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <!--网站头部-->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo left">红豆云创</h1>
+            <ul class="nav left">
+                <li class="active">
+                    <a href="">选择模板</a>
+                </li>
+            </ul>
+            <ul class="noLoginNav right">
+                <li class="login hide">
+                    <a href="javascript:;" onclick="pop('loginPop')">登录</a>
+                </li>
+                <li class="register hide">
+                    <a href="javascript:;" onclick="pop('registPop')">注册</a>
+                </li>
+                <li class="user" id="userLogin">
+                    <div class="userImg left">
+                        <img src="images/head.jpg" alt="">
+                    </div>
+                    <i class="vip"></i>
+                    <span class="username left">上上签</span>
+                    <i class="arrow"></i>
+                    <div class="downMenu">
+                        <a href="">用户中心</a>
+                        <a href="">我的视频</a>
+                        <a href="">我的店铺</a>
+                        <a href="">账单明细</a>
+                        <a href="">我的收藏</a>
+                        <a href="">申请发票</a>
+                        <a href="">我要提现</a>
+                        <a href="">生成优惠</a>
+                    </div>
+                </li>
+                <li class="notice">
+                    <i class="hasNotice"></i>
+                    <i class="hide noNotice"></i>
+                </li>
+                <li class="exchange">
+                    <a href="">兑换优惠</a>
+                </li>
+                <li class="myViedo">
+                    <a href="">我的视频</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 用户中心 -->
+    <div class="useCenter">
+        <div class="container">
+            <div class="useCenter-menu left">1</div>
+            <div class="useCenter-content left">2</div>
+        </div>
+    </div>
+    <!--网站尾部-->
+    <div id="footer">
+        <div class="container">
+            <ul>
+                <li class="beian">备案信息：皖ICP备13018204号-3 公安备案号:34010402701563</li>
+                <li class="help">
+                    <a href="">帮助中心</a>
+                </li>
+                <li class="server24">5*8小时人工在线客服</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/unit.js"></script>
+    <script>
+        showMenu("#userLogin", ".downMenu")
+
+    </script>
+</body>
+
+</html>

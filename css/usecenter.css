@@ -1,0 +1,13 @@
+.useCenter {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.useCenter .useCenter-menu {
+  width: 260px;
+  background-color: #ebebeb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.useCenter .useCenter-content {
+  width: 940px;
+}
