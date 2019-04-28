@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="plugin/swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="plugin/video/video-js.min.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <!--网站头部-->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo left">红豆云创</h1>
+            <ul class="nav left">
+                <li class="active">
+                    <a href="">选择模板</a>
+                </li>
+            </ul>
+            <ul class="noLoginNav right">
+                <li class="login hide">
+                    <a href="javascript:;" onclick="pop('loginPop')">登录</a>
+                </li>
+                <li class="register hide">
+                    <a href="javascript:;" onclick="pop('registPop')">注册</a>
+                </li>
+                <li class="user" id="userLogin">
+                    <div class="userImg left">
+                        <img src="images/head.jpg" alt="">
+                    </div>
+                    <i class="vip"></i>
+                    <span class="username left">上上签</span>
+                    <i class="arrow"></i>
+                    <div class="downMenu">
+                        <a href="">用户中心</a>
+                        <a href="">我的视频</a>
+                        <a href="">我的店铺</a>
+                        <a href="">账单明细</a>
+                        <a href="">我的收藏</a>
+                        <a href="">申请发票</a>
+                        <a href="">我要提现</a>
+                        <a href="">生成优惠</a>
+                    </div>
+                </li>
+                <li class="notice">
+                    <i class="hasNotice"></i>
+                    <i class="hide noNotice"></i>
+                </li>
+                <li class="exchange">
+                    <a href="">兑换优惠</a>
+                </li>
+                <li class="myViedo">
+                    <a href="">我的视频</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="viedoDetails">
+        <div class="container">
+            <div class="viedo-mp4 left">
+                <video id="my-video" class="video-js" controls preload="auto" width="618" height="400" poster="./plugin/video/m.jpg"
+                    data-setup="{}">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web
+                        browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                            video</a> </p>
+                </video>
+            </div>
+            <div class="viedo-info right">
+                <p class="viedo-title">年会颁奖视频</p>
+                <p class="other-info"><span>免费制作</span>(标清有水印)</p>
+                <p class="other-info"><span>5分钟内￥ <i>260元</i></span></p>
+                <div class="cost-ruler">
+                    <span>超过部分按60/分钟</span>
+                    <a href="" class="cost-link">计费规则</a>
+                </div>
+                <div class="cost-demo">自由模板</div>
+                <ul class="guige">
+                    <li>视频规格：<span>1920*1080</span> 比例：<span>16:9</span></li>
+                    <li>视频类型：<span>图片模板</span></li>
+                    <li>编辑内容：<span>可替换图片 文字</span></li>
+                    <li>已有7.7万人使用</li>
+                </ul>
+                <a href="javascript:;" class="free-make-viedo">免费制作视频</a>
+                <div class="collect hasCollect"></div>
+            </div>
+            <ul class="make-info clearfix">
+                <li class="title">制作说明</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+                <li>免费制作，标清有水印，提供下载，也可以直接分享再各大社校平台</li>
+            </ul>
+        </div>
+    </div>
+    <!--网站尾部-->
+    <div id="footer">
+        <div class="container">
+            <ul>
+                <li class="beian">备案信息：皖ICP备13018204号-3 公安备案号:34010402701563</li>
+                <li class="help">
+                    <a href="">帮助中心</a>
+                </li>
+                <li class="server24">5*8小时人工在线客服</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 注册 -->
+    <div class="registLogin" id="registPop">
+        <div class="close" onclick="easyDialog.close()" title="关闭">X</div>
+        <div class="redDouInfo left">
+            <p>使用红豆原创，在线制作专业视频</p>
+            <ul>
+                <li><span></span>无需专业知识，5分钟上手，极速出片</li>
+                <li><span></span>超多设计专业的模板，满足各类需求</li>
+                <li><span></span>蓝光超清成片，支持投影仪、LED大屏播放</li>
+                <li><span></span>支持一键分享微信朋友圈</li>
+            </ul>
+        </div>
+        <div class="registLogin-wrap right">
+            <div class="loginBox">
+                <p class="title">注册</p>
+                <ul class="other-set">
+                    <li class="weixin left"></li>
+                    <li class="QQ right"></li>
+                </ul>
+                <P class="other-info">
+                    第三方登录或者使用手机号码登录<br>
+                    没有注册吗？<a class="registerLink" href="javascript:;">注册</a>
+                </P>
+                <div class="formBox loginForm">
+                    <div class="inputItem">
+                        <input type="text" class="inputClass" placeholder="手机号码/邮箱">
+                    </div>
+                    <div class="yzmItem">
+                        <input type="password" class="yzmClass left" placeholder="请输入验证码">
+                        <a href="JavaScript:;" class="getLink right">获取验证码</a>
+                    </div>
+                    <a href="" class="formBtn">注 册</a>
+                    <p class="registerInfo">点击注册按钮代表同意<a href="">《红豆用户协议》</a><br />
+                        手机号仅供注册使用，不会向任何第三方泄露
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录弹窗 -->
+    <div class="registLogin" id="loginPop">
+        <div class="close" onclick="easyDialog.close()" title="关闭">X</div>
+        <div class="redDouInfo left">
+            <p>使用红豆原创，在线制作专业视频</p>
+            <ul>
+                <li><span></span>无需专业知识，5分钟上手，极速出片</li>
+                <li><span></span>超多设计专业的模板，满足各类需求</li>
+                <li><span></span>蓝光超清成片，支持投影仪、LED大屏播放</li>
+                <li><span></span>支持一键分享微信朋友圈</li>
+            </ul>
+        </div>
+        <div class="registLogin-wrap right">
+            <div class="loginBox">
+                <p class="title">登录</p>
+                <ul class="other-set">
+                    <li class="weixin left"></li>
+                    <li class="QQ right"></li>
+                </ul>
+                <P class="other-info">
+                    第三方登录或者使用手机号码登录<br>
+                    没有注册吗？<a class="registerLink" href="javascript:;">注册</a>
+                </P>
+                <div class="formBox loginForm">
+                    <div class="inputItem">
+                        <input type="text" class="inputClass" placeholder="手机号码/邮箱">
+                    </div>
+                    <div class="inputItem noMargin">
+                        <input type="password" class="inputClass" placeholder="密码">
+                    </div>
+                    <div class="infoItem">
+                        <input type="checkbox" checked> 自动登录
+                        <a href="" class="forgetPwdLink right">忘记密码</a>
+                    </div>
+                    <a href="" class="formBtn">登 录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/easydialog.min.js"></script>
+    <script src="plugin/video/video.min.js"></script>
+    <script src="js/unit.js"></script>
+    
+    <script>
+        showMenu("#userLogin",".downMenu")
+        var myPlayer = videojs('my-video');
+        videojs("my-video").ready(function () {
+            var myPlayer = this;
+            myPlayer.play();
+        });
+    </script>
+</body>
+
+</html>

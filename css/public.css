@@ -1,0 +1,384 @@
+/**
+*头部公用样式
+*/
+#header {
+  height: 63px;
+  background: url(../images/public/bg.png) 0 0 repeat-x;
+}
+#header h1 {
+  width: 122px;
+  height: 63px;
+  background: url(../images/public/logo.png) 0 center no-repeat;
+  text-indent: -999px;
+}
+#header .nav {
+  margin-left: 40px;
+}
+#header .nav li {
+  float: left;
+  width: 104px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+}
+#header .nav li:hover,
+#header .nav li.active {
+  border-bottom: 3px solid #48caba;
+}
+#header .nav li:hover a,
+#header .nav li.active a {
+  color: #0ab8a3;
+}
+#header .nav li a {
+  display: block;
+  color: #333;
+}
+#header .nav li a:hover {
+  text-decoration: none;
+  color: #4cccbb;
+}
+#header .noLoginNav li {
+  float: left;
+  padding: 0 5px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+}
+#header .noLoginNav a {
+  display: block;
+  color: #333;
+}
+#header .noLoginNav a:hover {
+  text-decoration: none;
+  color: #4cccbb;
+}
+#header .noLoginNav .user {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+#header .noLoginNav .user i {
+  display: block;
+  position: absolute;
+}
+#header .noLoginNav .user .userImg {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header .noLoginNav .user .userImg img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+#header .noLoginNav .user .username {
+  font-size: 16px;
+  color: #757474;
+}
+#header .noLoginNav .user .vip {
+  width: 10px;
+  height: 10px;
+  background: url(../images/icon/vip.png) 0 0 no-repeat;
+  background-size: 10px 10px;
+  left: 20px;
+  top: 35px;
+}
+#header .noLoginNav .user .arrow {
+  width: 9px;
+  height: 5px;
+  background: url(../images/icon/arrow.png) 0 0 no-repeat;
+  right: 0;
+  top: 28px;
+}
+#header .noLoginNav .user .downMenu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -70px;
+  z-index: 99;
+  width: 140px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#header .noLoginNav .user .downMenu a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#header .noLoginNav .user .downMenu a:hover {
+  background-color: #f2f9f8;
+  color: #0ab8a3;
+}
+#header .noLoginNav .notice {
+  padding: 0 10px 0 20px;
+}
+#header .noLoginNav .notice i {
+  display: block;
+  width: 20px;
+  height: 22px;
+  position: relative;
+  top: 18px;
+}
+#header .noLoginNav .notice .hasNotice {
+  background: url(../images/icon/message_has.png) 0 0 no-repeat;
+}
+#header .noLoginNav .notice .noNotice {
+  background: url(../images/icon/message_no.png) 0 0 no-repeat;
+}
+#header .noLoginNav .exchange {
+  margin-left: 10px;
+}
+#header .noLoginNav .myViedo {
+  padding-top: 15px;
+  height: 50px;
+  margin-left: 10px;
+}
+#header .noLoginNav .myViedo a {
+  width: 82px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #4bcdbc;
+  color: #fff;
+  border-radius: 2px;
+}
+#header .noLoginNav .myViedo a:hover {
+  background-color: #66e0d0;
+}
+/**
+*网站尾部
+*/
+#footer {
+  height: 64px;
+  background-color: #525252;
+}
+#footer li {
+  width: 33.333%;
+  float: left;
+  line-height: 64px;
+  color: #fff;
+}
+#footer li a {
+  color: #fff;
+}
+#footer li a:hover {
+  text-decoration: none;
+  color: #4cccbb;
+}
+#footer .beian {
+  text-align: left;
+}
+#footer .server24 {
+  text-align: right;
+}
+.page {
+  width: 676px;
+  margin: 20px auto;
+}
+.page li {
+  float: left;
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  margin-right: 12px;
+  color: #011e3c;
+  font-size: 15px;
+  cursor: pointer;
+}
+.page li:hover {
+  color: #4cccbb;
+  border-color: #49ccbc;
+  background-color: #49ccbc;
+  color: #fff;
+}
+.page .pre,
+.page .next {
+  width: 54px;
+}
+input::-webkit-input-placeholder {
+  color: #a8a8aa;
+  font-size: 14px;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a8a8aa;
+  font-size: 14px;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a8a8aa;
+  font-size: 14px;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a8a8aa;
+  font-size: 14px;
+}
+/*
+*登录/注册弹窗
+*/
+.registLogin {
+  display: none;
+  width: 810px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  position: relative;
+}
+.registLogin .close {
+  position: absolute;
+  top: 28px;
+  right: 26px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  color: #cdcdcd;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.registLogin .redDouInfo {
+  width: 476px;
+  padding-top: 76px;
+  text-align: left;
+}
+.registLogin .redDouInfo p {
+  height: 82px;
+  line-height: 82px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+.registLogin .redDouInfo li {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 14px;
+}
+.registLogin .redDouInfo li span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+.registLogin .registLogin-wrap {
+  width: 288px;
+  padding: 0 20px 36px;
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+}
+.registLogin .registLogin-wrap .title {
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  color: #4e4e4e;
+  font-weight: bold;
+}
+.registLogin .registLogin-wrap .other-set {
+  width: 130px;
+  overflow: hidden;
+  margin: 0 auto 14px;
+}
+.registLogin .registLogin-wrap .other-set li {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ccc;
+}
+.registLogin .registLogin-wrap .other-info {
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 44px;
+}
+.registLogin .registLogin-wrap .other-info a.registerLink {
+  color: #4bcdbc;
+}
+.registLogin .registLogin-wrap .other-info a.registerLink:hover {
+  text-decoration: underline;
+}
+.registLogin .registLogin-wrap .formBox .inputItem {
+  margin-bottom: 16px;
+  height: 42px;
+  border: 1px solid #cdcdcd;
+  padding: 0 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.registLogin .registLogin-wrap .formBox .inputItem .inputClass {
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  outline: none;
+  height: 40px;
+}
+.registLogin .registLogin-wrap .formBox .infoItem {
+  height: 42px;
+  line-height: 42px;
+  text-align: left;
+  color: #b4b4b5;
+}
+.registLogin .registLogin-wrap .formBox .infoItem a.forgetPwdLink {
+  color: #b4b4b5;
+}
+.registLogin .registLogin-wrap .formBox .infoItem a.forgetPwdLink:hover {
+  color: #4bcdbc;
+}
+.registLogin .registLogin-wrap .formBox a.formBtn {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #4bcdbc;
+  color: #fff;
+  border-radius: 3px;
+}
+.registLogin .registLogin-wrap .formBox .yzmItem {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.registLogin .registLogin-wrap .formBox .yzmItem .yzmClass {
+  width: 165px;
+  background: #fff;
+  height: 42px;
+  border: 1px solid #cdcdcd;
+  padding: 0 10px;
+  border-radius: 3px;
+  outline: none;
+}
+.registLogin .registLogin-wrap .formBox .yzmItem a.getLink {
+  display: block;
+  width: 92px;
+  height: 38px;
+  line-height: 42px;
+  border: 2px solid #4bcdbc;
+  color: #4bcdbc;
+}
+.registLogin .registLogin-wrap .formBox .yzmItem a.getLink:hover {
+  background-color: #4bcdbc;
+  color: #fff;
+}
+.registLogin .registLogin-wrap .formBox .registerInfo {
+  margin-top: 16px;
+  line-height: 22px;
+  color: #949494;
+}
+.registLogin .registLogin-wrap .formBox .registerInfo a {
+  color: #4bcdbc;
+}
+.registLogin .registLogin-wrap .formBox .registerInfo a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,390 @@
+/**
+*头部公用样式
+*/
+#header {
+    height: 63px;
+    background: url(../images/public/bg.png) 0 0 repeat-x;
+    h1 {
+        width: 122px;
+        height: 63px;
+        background: url(../images/public/logo.png) 0 center no-repeat;
+        text-indent: -999px;
+    }
+    .nav {
+        margin-left: 40px;
+        li {
+            float: left;
+            width: 104px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            &:hover,&.active{
+                border-bottom: 3px solid #48caba; 
+                a {
+                    color: #0ab8a3;
+                }
+            }
+            a {
+                display: block;
+                color: #333;
+                &:hover{
+                    text-decoration: none;
+                    color:#4cccbb
+                }
+            }
+            
+        }
+    }
+    .noLoginNav {
+        li {
+            float: left;
+            padding: 0 5px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 14px;
+        }
+        a {
+            display: block;
+            color: #333;
+            &:hover{
+                text-decoration: none;
+                color:#4cccbb
+            }
+        }
+        .user {
+            position: relative;
+            padding-left: 40px;
+            padding-right: 20px;
+            i {
+                display: block;
+                position: absolute;
+            }
+            .userImg {
+                position: absolute;
+                left: 0;
+                top: 13px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .username {
+                font-size: 16px;
+                color: #757474;
+            }
+            .vip {
+                width: 10px;
+                height: 10px;
+                background: url(../images/icon/vip.png) 0 0 no-repeat;
+                background-size: 10px 10px; 
+                left: 20px;
+                top: 35px;
+            }
+            .arrow {
+                width: 9px;
+                height: 5px;
+                background: url(../images/icon/arrow.png) 0 0 no-repeat;
+                right: 0;
+                top: 28px;
+            }
+            .downMenu {
+                display: none;
+                position: absolute;
+                top: 55px;
+                left: 50%;
+                margin-left: -70px;
+                z-index: 99;
+                width: 140px;
+                padding: 10px 0;
+                background-color: #fff;
+                border-radius: 5px;
+                a {
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                a:hover {
+                    background-color: #f2f9f8;
+                    color: #0ab8a3;
+                }
+            }
+        }
+        .notice {
+            padding: 0 10px 0 20px;
+            i {
+               display: block;
+               width: 20px;
+               height: 22px;
+               position: relative;
+               top: 18px;
+            }
+            .hasNotice {
+                background: url(../images/icon/message_has.png) 0 0 no-repeat
+            }
+            .noNotice {
+                background: url(../images/icon/message_no.png) 0 0 no-repeat
+            }
+        }
+        .exchange {
+            margin-left: 10px
+        }
+        .myViedo {
+            padding-top: 15px;
+            height: 50px;
+            margin-left: 10px;
+            a {
+                width: 82px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #4bcdbc;
+                color: #fff;
+                border-radius: 2px;
+                &:hover{
+                    background-color: #66e0d0
+                }
+            }
+
+        }
+    }
+}
+
+/**
+*网站尾部
+*/
+#footer{
+    height: 64px;
+    background-color: #525252;
+    li {
+        width: 33.333%;
+        float: left;
+        line-height: 64px;
+        color: #fff;
+        a {
+            color: #fff;
+            &:hover{
+                text-decoration: none;
+                color:#4cccbb
+            }
+        }
+    }
+    .beian {
+        text-align: left
+    }
+    .server24 {
+        text-align: right
+    }
+}
+
+// 分页
+.page {
+    width: 676px;
+    margin: 20px auto;
+    li {
+        float: left;
+        width: 40px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        border: 1px solid #d7d7d7;
+        margin-right: 12px;
+        color: #011e3c;
+        font-size: 15px;
+        cursor: pointer;
+        &:hover {
+            color: rgb(76, 204, 187);
+            border-color: #49ccbc;
+            background-color: #49ccbc;
+            color: #fff;
+        }
+    }
+    .pre,.next {
+        width: 54px;
+    }
+}
+
+input::-webkit-input-placeholder{
+    color:#a8a8aa;
+    font-size: 14px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#a8a8aa;
+    font-size: 14px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#a8a8aa;
+    font-size: 14px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#a8a8aa;
+    font-size: 14px;
+}
+
+/*
+*登录/注册弹窗
+*/
+.registLogin {
+    display: none;
+    width: 810px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    position: relative;
+    .close {
+        position: absolute;
+        top: 28px;
+        right: 26px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #cdcdcd;
+        color: #cdcdcd;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+    .redDouInfo {
+        width: 476px;
+        padding-top: 76px;
+        text-align: left;
+        p {
+            height: 82px;
+            line-height: 82px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2b2b2b
+        }
+        li {
+            height: 28px;
+            line-height: 28px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 14px;
+            span {
+                display: block;
+                width: 4px;
+                height: 4px;
+                background-color: #000;
+                position: absolute;
+                left: 12px;
+                top: 10px;
+            }
+        }
+    }
+    .registLogin-wrap {
+        width: 288px;
+        padding: 0 20px 36px;
+        border: 1px solid #d7d7d7;
+        background-color: #fff;
+        .title {
+            height: 80px;
+            line-height: 80px;
+            font-size: 20px;
+            color: #4e4e4e;
+            font-weight: bold;
+        }
+        .other-set {
+            width: 130px;
+            overflow: hidden;
+            margin: 0 auto 14px;
+            li {
+                width: 46px;
+                height: 46px;
+                border: 1px solid #ccc;
+            }
+        }
+        .other-info {
+            line-height: 20px;
+            color: #949494;
+            margin-bottom: 44px;
+            a.registerLink {
+                color: #4bcdbc;
+                &:hover {
+                    text-decoration: underline
+                }
+            }
+        }
+        .formBox {
+            .inputItem {
+                margin-bottom: 16px;
+                height: 42px;
+                border: 1px solid #cdcdcd;
+                padding: 0 10px;
+                border-radius: 3px;
+                overflow: hidden;
+                .inputClass {
+                    width: 100%;
+                    border: 0;
+                    background-color: #fff;
+                    outline: none;
+                    height: 40px;;
+                } 
+            }
+            .infoItem {
+                height: 42px;
+                line-height: 42px;
+                text-align: left;
+                color: #b4b4b5;
+                a.forgetPwdLink {
+                    color: #b4b4b5;
+                    &:hover {
+                        color:#4bcdbc 
+                    }
+                }
+            }
+            a.formBtn {
+                display: block;
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                font-size: 16px;
+                text-align: center;
+                background-color: #4bcdbc;
+                color: #fff;
+                border-radius: 3px;
+            }
+            .yzmItem {
+                overflow: hidden;
+                margin-bottom: 10px;
+                .yzmClass {
+                    width: 165px;
+                    background: #fff;
+                    height: 42px;
+                    border: 1px solid #cdcdcd;
+                    padding: 0 10px;
+                    border-radius: 3px;
+                    outline: none;
+                }
+                a.getLink {
+                    display: block;
+                    width: 92px;
+                    height: 38px;
+                    line-height: 42px;
+                    border: 2px solid #4bcdbc;
+                    color: #4bcdbc;
+                    &:hover {
+                        background-color:#4bcdbc;
+                        color: #fff; 
+                    }
+                }
+                
+            }
+            .registerInfo {
+                margin-top: 16px;
+                line-height: 22px;
+                color: #949494;
+                a {
+                    color: #4bcdbc;
+                    &:hover{
+                        text-decoration: underline
+                    }
+                }
+            }
+        }
+    }
+}

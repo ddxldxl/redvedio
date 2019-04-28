@@ -1,0 +1,119 @@
+.viedoDetails .container {
+  width: 1120px;
+  padding: 20px 40px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.viedoDetails .viedo-mp4 {
+  width: 55%;
+  height: 400px;
+  border: 1px solid #ccc;
+}
+.viedoDetails .viedo-info {
+  width: 43%;
+  height: 400px;
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+.viedoDetails .viedo-info .viedo-title {
+  height: 34px;
+  line-height: 34px;
+  font-size: 20px;
+}
+.viedoDetails .viedo-info .other-info {
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #939393;
+  position: relative;
+}
+.viedoDetails .viedo-info .other-info span {
+  color: #ff4444;
+}
+.viedoDetails .viedo-info .other-info i {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+}
+.viedoDetails .viedo-info .cost-ruler {
+  height: 24px;
+  line-height: 24px;
+  color: #ff4444;
+  border-top: 1px solid #d7d7d7;
+  margin-bottom: 7px;
+}
+.viedoDetails .viedo-info .cost-ruler a.cost-link {
+  float: right;
+  color: #6d6d6d;
+  text-decoration: underline;
+}
+.viedoDetails .viedo-info .cost-ruler a.cost-link:hover {
+  color: #ff4444;
+}
+.viedoDetails .viedo-info .cost-demo {
+  display: block;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  color: #656565;
+  margin-bottom: 7px;
+}
+.viedoDetails .viedo-info .guige li {
+  line-height: 26px;
+  height: 26px;
+  color: #656565;
+  font-size: 14px;
+}
+.viedoDetails .viedo-info a.free-make-viedo {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 200px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #1ad8ae;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.viedoDetails .viedo-info a.free-make-viedo:hover {
+  background-color: #1ff2c3;
+}
+.viedoDetails .viedo-info .collect {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+.viedoDetails .make-info {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+  padding: 15px;
+  border-radius: 3px;
+}
+.viedoDetails .make-info li {
+  height: 30px;
+  line-height: 30px;
+  color: #5f5f5f;
+  text-align: left;
+}
+.viedoDetails .make-info .title {
+  color: #ff4444;
+}
+.viedoDetails .video-js .vjs-big-play-button {
+  width: 90px;
+  height: 46px;
+  left: 50%;
+  top: 50%;
+  margin-left: -45px;
+  margin-top: -23px;
+}

@@ -1,0 +1,366 @@
+#Carousel .swiper-container {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+#Carousel .swiper-container img {
+  width: 1200px;
+  height: 300px;
+}
+#hotShop {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#hotShop .classify {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 15px;
+  width: 1170px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+#hotShop .classify-content {
+  position: relative;
+}
+#hotShop .classify-content li {
+  float: left;
+}
+#hotShop .classify-content li a {
+  display: block;
+  text-align: center;
+}
+#hotShop .classify-content .main-other {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  padding-top: 6px;
+}
+#hotShop .classify-content .main-other .searchBox {
+  width: 154px;
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+#hotShop .classify-content .main-other .searchBox .searchInput {
+  width: 110px;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+  background: #fff;
+  outline: none;
+}
+#hotShop .classify-content .main-other .searchBox button {
+  background: none;
+  border: 0;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  background: url(../images/icon/search.png) center 6px no-repeat;
+  text-indent: -999px;
+  outline: none;
+}
+#hotShop .classify-content .main-other .hotLatest li {
+  float: left;
+  width: 42px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+#hotShop .classify-content .main-other .hotLatest li a {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+#hotShop .classify-content .main-other .hotLatest li a:hover,
+#hotShop .classify-content .main-other .hotLatest li a.active {
+  background-color: #4cccbb;
+  color: #fff;
+}
+#hotShop .classify-content .son-other {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#hotShop .classify-content .son-other li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 30px;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+#hotShop .classify-content .son-other li .arrow {
+  width: 16px;
+  height: 8px;
+  background: url(../images/icon/arrow.png) 0 2px no-repeat;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+#hotShop .classify-content .son-other li .downMenu {
+  display: none;
+  width: 94px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  margin-left: -47px;
+  z-index: 999;
+}
+#hotShop .classify-content .son-other li .downMenu a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #eee;
+}
+#hotShop .classify-content .son-other li .downMenu a:hover {
+  font-weight: bold;
+  color: #4cccbb;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem {
+  width: 74px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem dd,
+#hotShop .classify-content .son-other li .downMenu .colorItem dt {
+  float: left;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem dd {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem .ckBox {
+  border: 0;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem .ckBox input {
+  width: 15px;
+  height: 15px;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem dt {
+  text-align: left;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem:hover .txt {
+  cursor: pointer;
+  font-weight: bold;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem .red {
+  background-color: red;
+}
+#hotShop .classify-content .son-other li .downMenu .colorItem .green {
+  background-color: green;
+}
+#hotShop .main-classify li {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+}
+#hotShop .main-classify li a {
+  width: 60px;
+  font-size: 16px;
+}
+#hotShop .main-classify li a:hover,
+#hotShop .main-classify li a.active {
+  color: #0ab8a3;
+  border-bottom: 3px solid #48caba;
+}
+#hotShop .son-classify li {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#hotShop .son-classify li a:hover,
+#hotShop .son-classify li a.active {
+  color: #0ab8a3;
+}
+#hotShop .shopBox {
+  width: 1200px;
+  margin: 0 auto;
+}
+#hotShop .shopBox .shopItem {
+  width: 282px;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 30px;
+}
+#hotShop .shopBox .shopImg {
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+#hotShop .shopBox .shopImg:hover .play {
+  display: block;
+}
+#hotShop .shopBox .shopImg img {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+#hotShop .shopBox .shopImg .play {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: url(../images/icon/play.png) 0 0 no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+}
+#hotShop .shopBox .shopImg .useNum {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+#hotShop .shopBox .shopImg .collect {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+}
+#hotShop .shopBox .shopImg .hasCollect {
+  background: url(../images/icon/collect.png) 0 0 no-repeat;
+}
+#hotShop .shopBox .shopImg .noCollect {
+  background: url(../images/icon/collect_no.png) 0 0 no-repeat;
+}
+#hotShop .shopBox .shopInfo {
+  width: 272px;
+  padding: 0 5px;
+  background-color: #fff;
+  text-align: left;
+  color: #999;
+  position: relative;
+}
+#hotShop .shopBox .shopInfo .title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+#hotShop .shopBox .shopInfo i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+#hotShop .shopBox .shopInfo .shop-params {
+  height: 30px;
+  line-height: 30px;
+}
+#hotShop .shopBox .shopInfo .shop-params li {
+  float: left;
+  width: 30px;
+  padding-left: 20px;
+  margin-right: 15px;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+}
+#hotShop .shopBox .shopInfo .shop-params .txtNums {
+  background: url(../images/icon/font.png) 0 0 no-repeat;
+}
+#hotShop .shopBox .shopInfo .shop-params .picNums {
+  background: url(../images/icon/pic.png) 0 0 no-repeat;
+}
+#hotShop .shopBox .shopInfo .freeDemo {
+  width: 262px;
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  background: url(../images/icon/free-demo.png) 0 8px no-repeat;
+}
+#hotShop .shopBox .shopInfo .time {
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.shopBox {
+  width: 100%;
+  height: 165px;
+  margin: 10px 0;
+}
+.shopBox .shopInfo {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.shopBox .shopBg {
+  width: 1200px;
+  height: 165px;
+}
+.shopBox .shoperImg {
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  overflow: hidden;
+}
+.shopBox .shoperImg img {
+  display: block;
+  width: 114px;
+  height: 114px;
+}
+.shopBox .shoperName {
+  position: absolute;
+  top: 120px;
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+.shopBox .collect-shop {
+  width: 92px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 30px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.shopBox .collect-shop:hover {
+  color: #fff;
+}
+.shopBox .collect-shop i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  background: url(../images/icon/shop.png) 0 0 no-repeat;
+  background-size: 20px 20px;
+}

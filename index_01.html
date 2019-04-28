@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="plugin/swiper/swiper-3.4.2.min.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <!--网站头部-->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo left">红豆云创</h1>
+            <ul class="nav left">
+                <li class="active">
+                    <a href="">选择模板</a>
+                </li>
+            </ul>
+            <ul class="noLoginNav right">
+                <li class="login hide">
+                    <a href="javascript:;" onclick="pop('loginPop')">登录</a>
+                </li>
+                <li class="register hide">
+                    <a href="javascript:;" onclick="pop('registPop')">注册</a>
+                </li>
+                <li class="user" id="userLogin">
+                    <div class="userImg left">
+                        <img src="images/head.jpg" alt="">
+                    </div>
+                    <i class="vip"></i>
+                    <span class="username left">上上签</span>
+                    <i class="arrow"></i>
+                    <div class="downMenu">
+                        <a href="">用户中心</a>
+                        <a href="">我的视频</a>
+                        <a href="">我的店铺</a>
+                        <a href="">账单明细</a>
+                        <a href="">我的收藏</a>
+                        <a href="">申请发票</a>
+                        <a href="">我要提现</a>
+                        <a href="">生成优惠</a>
+                    </div>
+                </li>
+                <li class="notice">
+                    <i class="hasNotice"></i>
+                    <i class="hide noNotice"></i>
+                </li>
+                <li class="exchange">
+                    <a href="">兑换优惠</a>
+                </li>
+                <li class="myViedo">
+                    <a href="">我的视频</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 店铺信息 -->
+    <div class="shopBox">
+        <div class="container">
+            <div class="shopInfo">
+                <img src="images/shop_bg.jpg" class="shopBg" alt="">
+                <div class="shoperImg">
+                    <img src="images/headerImg.png" alt="">
+                </div>
+                <p class="shoperName">芊芊观音活动策划</p> 
+                <div class="collect-shop">
+                    <i></i>收藏店铺
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 热门商品 -->
+    <div id="hotShop">
+        <div class="classify">
+            <div class="classify-content borderBottom clearfix">
+                <ul class="main-classify">
+                    <li>
+                        <a class="active" href="javascript:;">全部</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">婚礼</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">相册</a>
+                    </li>
+                </ul>
+                <div class="main-other">
+                    <div class="searchBox left">
+                        <input type="text" class="searchInput left" placeholder="输入姓名">
+                        <button>搜索</button>
+                    </div>
+                    <div class="hotLatest right">
+                        <ul>
+                            <li><a href="javascript:;" class="active">热门</a></li>
+                            <li><a href="javascript:;">最新</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="classify-content">
+                <ul class="son-classify">
+                    <li>
+                        <a class="active" href="javascript:;">全部</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">爱情故事</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">照片相册</a>
+                    </li>
+                </ul>
+                <div class="son-other">
+                    <ul>
+                        <li id="classfiy-content">
+                            <span>内容</span>
+                            <i class="arrow"></i>
+                            <div class="downMenu">
+                                <a href="">不限</a>
+                                <a href="">图文混合</a>
+                                <a href="">仅图片</a>
+                                <a href="">仅文字</a>
+                            </div>
+                        </li>
+                        <li id="classfiy-type">
+                            <span>制作方式</span>
+                            <i class="arrow"></i>
+                            <div class="downMenu">
+                                <a href="">不限</a>
+                                <a href="">自由模板</a>
+                                <a href="">固定模板</a>
+                            </div>
+                        </li>
+                        <li id="classfiy-bili">
+                            <span>选择比例</span>
+                            <i class="arrow"></i>
+                            <div class="downMenu">
+                                <a href="">不限</a>
+                                <a href="">横版（16:9）</a>
+                                <a href="">竖版（9:16）</a>
+                                <a href="">正方形（1:1）</a>
+                                <a href="">大宽频</a>
+                            </div>
+                        </li>
+                        <li id="classfiy-color">
+                            <span>选择色系</span>
+                            <i class="arrow"></i>
+                            <div class="downMenu">
+                                <dl class="colorItem">
+                                    <dd class="color">
+                                        <div class="ckBox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </dd>
+                                    <dt class="txt">不限</dt>
+                                </dl>
+                                <dl class="colorItem">
+                                    <dd class="color red"></dd>
+                                    <dt class="txt">红色</dt>
+                                </dl>
+                                <dl class="colorItem">
+                                    <dd class="color green"></dd>
+                                    <dt class="txt">绿色</dt>
+                                </dl>
+                                <dl class="colorItem">
+                                    <dd class="color red"></dd>
+                                    <dt class="txt">红色</dt>
+                                </dl>
+                                <dl class="colorItem">
+                                    <dd class="color green"></dd>
+                                    <dt class="txt">绿色</dt>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shopBox">
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect hasCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <div class="freeDemo"><i class="free"></i>自由模板</div>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect noCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <ul class="shop-params">
+                        <li><i class="txtNums"></i>15</li>
+                        <li><i class="picNums"></i>15</li>
+                    </ul>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect hasCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <div class="freeDemo"><i class="free"></i>自由模板</div>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect noCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <ul class="shop-params">
+                        <li><i class="txtNums"></i>15</li>
+                        <li><i class="picNums"></i>15</li>
+                    </ul>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect hasCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <div class="freeDemo"><i class="free"></i>自由模板</div>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect noCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <ul class="shop-params">
+                        <li><i class="txtNums"></i>15</li>
+                        <li><i class="picNums"></i>15</li>
+                    </ul>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect hasCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <div class="freeDemo"><i class="free"></i>自由模板</div>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+            <div class="shopItem">
+                <div class="shopImg">
+                    <img src="images/shop.png" alt="">
+                    <span class="play"></span>
+                    <p class="useNum">已有<span>123456</span>人使用</p>
+                    <div class="collect noCollect" data-ck="1"></div>
+                </div>
+                <div class="shopInfo">
+                    <p class="title">作品标题</p>
+                    <ul class="shop-params">
+                        <li><i class="txtNums"></i>15</li>
+                        <li><i class="picNums"></i>15</li>
+                    </ul>
+                    <div class="time"><span>最长20分钟</span></div>
+                </div>
+            </div>
+        </div>
+         <!-- 分页 -->
+         <div class="page clearfix">
+            <ul>
+                <li class="pre">上一页</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>...</li>
+                <li>100</li>
+                <li class="next">下一页</li>
+            </ul>
+        </div>
+    </div>
+    <!--网站尾部-->
+    <div id="footer">
+        <div class="container">
+            <ul>
+                <li class="beian">备案信息：皖ICP备13018204号-3 公安备案号:34010402701563</li>
+                <li class="help">
+                    <a href="">帮助中心</a>
+                </li>
+                <li class="server24">5*8小时人工在线客服</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 注册 -->
+    <div class="registLogin" id="registPop">
+        <div class="close" onclick="easyDialog.close()" title="关闭">X</div>
+        <div class="redDouInfo left">
+            <p>使用红豆原创，在线制作专业视频</p>
+            <ul>
+                <li><span></span>无需专业知识，5分钟上手，极速出片</li>
+                <li><span></span>超多设计专业的模板，满足各类需求</li>
+                <li><span></span>蓝光超清成片，支持投影仪、LED大屏播放</li>
+                <li><span></span>支持一键分享微信朋友圈</li>
+            </ul>
+        </div>
+        <div class="registLogin-wrap right">
+            <div class="loginBox">
+                <p class="title">注册</p>
+                <ul class="other-set">
+                    <li class="weixin left"></li>
+                    <li class="QQ right"></li>
+                </ul>
+                <P class="other-info">
+                    第三方登录或者使用手机号码登录<br>
+                    没有注册吗？<a class="registerLink" href="javascript:;">注册</a>
+                </P>
+                <div class="formBox loginForm">
+                    <div class="inputItem">
+                        <input type="text" class="inputClass" placeholder="手机号码/邮箱">
+                    </div>
+                    <div class="yzmItem">
+                        <input type="password" class="yzmClass left" placeholder="请输入验证码">
+                        <a href="JavaScript:;" class="getLink right">获取验证码</a>
+                    </div>
+                    <a href="" class="formBtn">注 册</a>
+                    <p class="registerInfo">点击注册按钮代表同意<a href="">《红豆用户协议》</a><br/>
+                    手机号仅供注册使用，不会向任何第三方泄露
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录弹窗 -->
+    <div class="registLogin" id="loginPop">
+            <div class="close" onclick="easyDialog.close()" title="关闭">X</div>
+            <div class="redDouInfo left">
+                <p>使用红豆原创，在线制作专业视频</p>
+                <ul>
+                    <li><span></span>无需专业知识，5分钟上手，极速出片</li>
+                    <li><span></span>超多设计专业的模板，满足各类需求</li>
+                    <li><span></span>蓝光超清成片，支持投影仪、LED大屏播放</li>
+                    <li><span></span>支持一键分享微信朋友圈</li>
+                </ul>
+            </div>
+            <div class="registLogin-wrap right">
+                <div class="loginBox">
+                    <p class="title">登录</p>
+                    <ul class="other-set">
+                        <li class="weixin left"></li>
+                        <li class="QQ right"></li>
+                    </ul>
+                    <P class="other-info">
+                        第三方登录或者使用手机号码登录<br>
+                        没有注册吗？<a class="registerLink" href="javascript:;">注册</a>
+                    </P>
+                    <div class="formBox loginForm">
+                        <div class="inputItem">
+                            <input type="text" class="inputClass" placeholder="手机号码/邮箱">
+                        </div>
+                        <div class="inputItem noMargin">
+                            <input type="password" class="inputClass" placeholder="密码">
+                        </div>
+                        <div class="infoItem">
+                            <input type="checkbox" checked> 自动登录
+                            <a href="" class="forgetPwdLink right">忘记密码</a>
+                        </div>
+                        <a href="" class="formBtn">登 录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="js/easydialog.min.js"></script>
+    <script src="plugin/swiper/swiper-3.4.2.min.js"></script>
+    <script src="js/unit.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        })
+        showMenu("#userLogin",".downMenu")
+        showMenu("#classfiy-content",".downMenu")  
+        showMenu("#classfiy-type",".downMenu")  
+        showMenu("#classfiy-bili",".downMenu")  
+        showMenu("#classfiy-color",".downMenu")
+        selMenu(".main-classify","li","active")
+        selMenu(".son-classify","li","active")
+        hasOrNo(".collect","hasCollect","noCollect")
+        
+        /*去除右边距*/
+        $(".shopBox .shopItem:nth-of-type(4n)").css("marginRight",0)
+    </script>
+</body>
+
+</html>
