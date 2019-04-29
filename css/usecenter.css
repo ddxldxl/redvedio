@@ -4,10 +4,146 @@
   overflow: hidden;
 }
 .useCenter .useCenter-menu {
-  width: 260px;
+  width: 258px;
   background-color: #ebebeb;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #e1e1e1;
+  border-right: 0;
+  padding-bottom: 80px;
+}
+.useCenter .useCenter-menu .person-user-box {
+  padding: 12px 18px 10px;
+  text-align: left;
+  color: #333;
+}
+.useCenter .useCenter-menu .person-user-box a {
+  color: #4cccbb;
+  text-decoration: underline;
+}
+.useCenter .useCenter-menu .person-user-box a:hover {
+  color: #ff4468;
+}
+.useCenter .useCenter-menu .user-header {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.useCenter .useCenter-menu .user-header .head-img {
+  width: 84px;
+  height: 84px;
+  float: left;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.useCenter .useCenter-menu .user-header .head-img img {
+  display: block;
+  width: 84px;
+  height: 84px;
+}
+.useCenter .useCenter-menu .user-header .use-name,
+.useCenter .useCenter-menu .user-header .vip-info {
+  width: 130px;
+  padding-left: 8px;
+  float: left;
+}
+.useCenter .useCenter-menu .user-header .use-name {
+  margin-top: 20px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.useCenter .useCenter-menu .user-header .vip-info {
+  height: 20px;
+  line-height: 20px;
+}
+.useCenter .useCenter-menu .account-money {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+}
+.useCenter .useCenter-menu .account-money span {
+  color: #ff4468;
+  font-size: 14px;
+  font-weight: bold;
+}
+.useCenter .useCenter-menu .account-nums {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+}
+.useCenter .useCenter-menu .account-nums span {
+  color: #4cccbb;
+}
+.useCenter .useCenter-menu .title {
+  height: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.useCenter .useCenter-menu .progress {
+  width: 100%;
+}
+.useCenter .useCenter-menu .progress .title {
+  height: 24px;
+  line-height: 24px;
+  color: #949494;
+  position: relative;
+}
+.useCenter .useCenter-menu .progress .title .nums {
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.useCenter .useCenter-menu .progress .parant-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #6a6a6a;
+  position: relative;
+}
+.useCenter .useCenter-menu .progress .parant-bar .inner-bar {
+  width: 50px;
+  height: 5px;
+  background-color: #4cccbb;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.useCenter .useCenter-menu .side-menu li {
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+}
+.useCenter .useCenter-menu .side-menu li a {
+  display: block;
+  width: 100%;
+  height: 34px;
+  color: #333;
+}
+.useCenter .useCenter-menu .side-menu li a:hover,
+.useCenter .useCenter-menu .side-menu li a.active {
+  background-color: #4cccbb;
+  color: #fff;
+}
+.useCenter .useCenter-menu .side-menu-title {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 7px;
+  font-size: 14px;
+  color: #959595;
+  border-bottom: 1px solid #d0d0d0;
+  text-align: left;
+  font-weight: normal;
+  margin: 10px 0;
 }
 .useCenter .useCenter-content {
   width: 940px;
+  min-height: 920px;
+  background-color: #fff;
+}
+.useCenter .useCenter-content #userContent {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }

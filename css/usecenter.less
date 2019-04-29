@@ -3,11 +3,153 @@
     margin: 10px 0;
     overflow: hidden;
     .useCenter-menu {
-        width: 260px;
+        width: 258px;
         background-color: rgba(235, 235, 235, 1);
-        border: 1px solid rgba(255,255,255,.1)
+        border: 1px solid #e1e1e1;
+        border-right: 0;
+        padding-bottom: 80px;
+        // 个人信息
+        .person-user-box {
+            padding: 12px 18px 10px;
+            text-align: left;
+            color: #333;
+            a {
+                color: #4cccbb;
+                text-decoration: underline;
+                &:hover{
+                    color: #ff4468;
+                }
+            }
+        }
+        .user-header {
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 10px;
+           
+            .head-img {
+                width: 84px;
+                height: 84px;
+                float: left;
+                overflow: hidden;
+                border-radius: 100%;
+                img {
+                    display: block;
+                    width: 84px;
+                    height: 84px;
+                }
+            }
+            .use-name,.vip-info {
+                width: 130px;
+                padding-left: 8px;
+                float: left;
+            }
+            .use-name {
+                margin-top: 20px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .vip-info {
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+        .account-money {
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            span {
+                color: #ff4468;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            a {
+
+            }
+        }
+        .account-nums {
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            span {
+                color: #4cccbb
+            }
+        }
+        .title {
+            height: 24px;
+            line-height: 24px;
+            font-weight: normal;
+        }
+        .progress {
+            width: 100%;
+            .title {
+                height: 24px;
+                line-height: 24px;
+                color: #949494;
+                position: relative;
+                .nums {
+                    height: 24px;
+                    line-height: 24px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            .parant-bar {
+                width: 100%;
+                height: 5px;
+                background-color: #6a6a6a;
+                position: relative;
+                .inner-bar {
+                    width: 50px;
+                    height: 5px;
+                    background-color: #4cccbb;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        .side-menu {
+            li {
+                height: 34px;
+                line-height: 34px;
+                font-size: 14px;
+                text-align: center;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 34px;
+                    color: #333;
+                    &:hover,&.active {
+                        background-color: #4cccbb;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .side-menu-title {
+            height: 26px;
+            line-height: 26px;
+            padding-left: 7px;
+            font-size: 14px;
+            color: #959595;
+            border-bottom: 1px solid #d0d0d0;
+            text-align: left;
+            font-weight: normal;
+            margin: 10px 0;
+        }
     }
     .useCenter-content {
         width: 940px;
+        min-height: 920px;
+        background-color: #fff;
+        #userContent {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     }
 }
+

@@ -63,8 +63,72 @@
     <!-- 用户中心 -->
     <div class="useCenter">
         <div class="container">
-            <div class="useCenter-menu left">1</div>
-            <div class="useCenter-content left">2</div>
+            <div class="useCenter-menu left">
+                <!-- 个人信息 -->
+                <div class="person-user-box">
+                    <div class="user-header">
+                        <div class="head-img">
+                            <img src="images/headerImg.png" alt="">
+                        </div>
+                        <p class="use-name">芊芊钱</p>
+                        <p class="vip-info">终身7折特权<a href="" class="right">去升级</a></p>
+                    </div>
+                    <p class="account-money clearfix"> 账户余额: <span>0元</span> <a href="" class="right">去充值</a></p>
+                    <p class="account-nums">优惠卷：<span>1</span>张   总面值：<span>50</span>元</p>
+                    <h6 class="title">本月状态：</h6>
+                    <div class="progress total-time">
+                        <div class="title">
+                            <p>预览总时长</p>
+                            <p class="nums">
+                                <span class="first-nums">27</span> / 
+                                <span class="total-nums">100</span>次
+                            </p>
+                        </div>
+                        <div class="parant-bar">
+                            <div class="inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress look-nums">
+                        <div class="title">
+                            <p>分享版观看次数</p>
+                            <p class="nums">
+                                <span class="first-nums">2766</span> / 
+                                <span class="total-nums">10000</span>次
+                            </p>
+                        </div>
+                        <div class="parant-bar">
+                            <div class="inner-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 导航 -->
+                <div class="slideList">
+                    <ul class="side-menu">
+                        <li><a class="active" href="./center/my-viedo.html" onclick="jumpTo(this,'#userContent',event)">我的视频</a></li>
+                        <li><a href="">账户充值</a></li>
+                        <li><a href="">兑换优惠</a></li>
+                        <li><a href="">预览加时</a></li>
+                        <li><a href="">折扣特权</a></li>
+                        <li><a href="">账单明细</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">发票申请</a></li>
+                        <li><a href="">站内信息</a></li>
+                        <li><a href="">完善资料</a></li>
+                        <li><a href="">开店赚钱</a></li>
+                    </ul>
+                    <h6 class="side-menu-title">商户信息</h6>
+                    <ul class="side-menu">
+                        <li><a href="">我要提现</a></li>
+                        <li><a href="">添加模板</a></li>
+                        <li><a href="">上传模板</a></li>
+                        <li><a href="">生成优惠</a></li>
+                        <li><a href="">店铺设置</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="useCenter-content left">
+                <iframe src="./center/my-viedo.html" name="user-content" id="userContent" frameborder="0"  scrolling="no"></iframe>
+            </div>
         </div>
     </div>
     <!--网站尾部-->
@@ -82,7 +146,11 @@
     <script src="js/unit.js"></script>
     <script>
         showMenu("#userLogin", ".downMenu")
-
+        // 预览总时长
+        progress(".look-nums",2766,10000)
+        // 分享版观看次数
+        progress(".total-time",27,100)
+        initIframeHeight(919)
     </script>
 </body>
 

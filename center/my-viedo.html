@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/use.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <div class="useWrap">
+        <ul class="tab">
+            <li class="active">制作中的视频</li>
+            <li>我的下载</li>
+        </ul>
+        <div class="content">
+            <div class="myViedo">
+                <div class="search">
+                    <a href="" class="createViedo right">创建视频</a>
+                    <div class="searchBox right">
+                        <input type="text" class="searchInput left" placeholder="输入姓名">
+                        <button>搜索</button>
+                    </div>
+                </div>
+                <ul class="my-viedo-list">
+                    <li>
+                        <div class="my-viedo-li">
+                            <div class="viedo-img">
+                                <img src="../images/shop01.png" alt="">
+                                <i class="editor-icon"></i>
+                            </div>
+                            <div class="editor-info">
+                                <p>新建项目<i class="editor02-icon"></i></p>
+                                <p class="editor-time">2019-02-18</p>
+                            </div>
+                            <div class="editor-Stytus">
+                                <a href="" class="goEditor">继续编辑</a>
+                                <div class="more">
+                                    <span>更多</span>
+                                    <div class="moreMenu">
+                                        <a href="">编辑</a>
+                                        <a href="">复制项目</a>
+                                        <a href="">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-viedo-li">
+                            <div class="viedo-img">
+                                <img src="../images/shop01.png" alt="">
+                                <i class="editor-icon"></i>
+                            </div>
+                            <div class="editor-info">
+                                <p>新建项目<i class="editor02-icon"></i></p>
+                                <p class="editor-time">2019-02-18</p>
+                            </div>
+                            <div class="editor-Stytus">
+                                <a href="" class="downVideo">下载</a>
+                                <a href="" class="shareVideo">分享</a>
+                                <div class="more">
+                                    <span>更多</span>
+                                    <div class="moreMenu">
+                                        <a href="">编辑</a>
+                                        <a href="">复制项目</a>
+                                        <a href="">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-viedo-li">
+                            <div class="viedo-img">
+                                <img src="../images/shop01.png" alt="">
+                                <i class="editor-icon"></i>
+                            </div>
+                            <div class="editor-info">
+                                <p>新建项目<i class="editor02-icon"></i></p>
+                                <p class="editor-time">2019-02-18</p>
+                            </div>
+                            <div class="editor-Stytus">
+                                <a href="" class="goEditor">继续编辑</a>
+                                <div class="more">
+                                    <span>更多</span>
+                                    <div class="moreMenu">
+                                        <a href="">编辑</a>
+                                        <a href="">复制项目</a>
+                                        <a href="">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content" style="display:block">
+            <div class="myDown">
+                <ul class="downTitle">
+                    <li>视频信息</li>
+                    <li>平台渲染费(元)</li>
+                    <li>模板使用费(元)</li>
+                    <li>总计(元)</li>
+                    <li>实际支付(元)</li>
+                </ul>
+                <ul class="downLIst">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/unit.js"></script>
+    <script>
+        // tab切换
+        $(".useWrap li").on("click", function () {
+            changeTab($(this))
+        })
+        showMenu(".more",".moreMenu")
+    </script>
+</body>
+
+</html>
